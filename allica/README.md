@@ -72,15 +72,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Implementtion Notes
 
-I ran low on time. Please find the approches I would have gone through.
+What works?
 
-Adding to favourites list.
-Add a small button alongside of each row and onclick of it, dispatch an action to add the 
-character details(name, gender, height and homeplanet) to favorites list state.
-When opening the character details page, if it isnot available already in the list, I would provide a button again to add it to the favourites list state.
-similarly for removing the characters, a button will be dded and on click of it i would remove the character details from the favouriteslist state.
+List the characters in a grid, each column can be filtered, a search panel is also available.
+Onclick of a row, it open character details page. If it is not in favorite list, ädd to favorites button is shown and can be added to the list.
+
+On main page, a button to go to favorites page is there. If we add the characters from main page and go to favorites page it will be shown.
 
 
-Another things I would have taken into account is to keep folders for chracter list and details seperately, REDUX in a seperate filder and assets like api in another folder for ease of access and maintainability.
+I hit few blockers. Pleae find it below.
 
-I didnt get time to add test cases which I would have implemented using Jest.
+ Whenever I try to open a component in a new tab, it wasn't behaving properly. So I had to use Navigate. But it does create an issue as we cant go back to home page with all the data.
+
+ While writing test cases, i am getting few errors which I couldn't resolve.
